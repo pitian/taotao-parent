@@ -1,8 +1,9 @@
 package service;
 
+import common.pojo.EasyUITreeNode;
+
 import java.util.List;
 
-import main.java.common.pojo.EasyUITreeNode;
 
 public interface ItemCatService {
 	

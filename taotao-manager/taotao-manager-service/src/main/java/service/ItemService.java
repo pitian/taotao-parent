@@ -1,8 +1,8 @@
 package service;
 
-import main.java.common.pojo.EasyUIDataGrideResult;
 
-import com.taotao.pojo.TbItem;
+import common.pojo.EasyUIDataGrideResult;
+import pojo.TbItem;
 
 public interface ItemService {
 	public TbItem queryTbItemById(Long id) throws Exception;

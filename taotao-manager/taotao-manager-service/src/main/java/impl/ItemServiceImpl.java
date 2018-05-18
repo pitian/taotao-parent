@@ -2,21 +2,18 @@ package impl;
 
 import java.util.List;
 
-import main.java.common.pojo.EasyUIDataGrideResult;
 
+import common.pojo.EasyUIDataGrideResult;
+import mapper.TbItemMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pojo.TbItem;
+import pojo.TbItemExample;
+import service.ItemService;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.taotao.mapper.TbItemMapper;
-import com.taotao.pojo.TbItem;
-import com.taotao.pojo.TbItemExample;
-import com.taotao.pojo.TbItemExample.Criteria;
-import com.taotao.service.ItemService;
 
 @Service
-public class ItemServiceImpl implements ItemService{
+public class ItemServiceImpl implements ItemService {
 
 	@Autowired
 	private TbItemMapper tbItemMapper;
@@ -25,7 +22,7 @@ public class ItemServiceImpl implements ItemService{
 		TbItem tbItem =null;
         TbItemExample example = new TbItemExample();
         //创建查询条件
-        Criteria criteria = example.createCriteria();
+        TbItemExample.Criteria criteria = example.createCriteria();
 		//		tbItemMapper.selectByPrimaryKey(id);
         criteria.andIdEqualTo(id);
         List<TbItem> tbItemList = tbItemMapper.selectByExample(example);
