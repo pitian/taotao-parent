@@ -1,16 +1,16 @@
-package com.taotao.controller;
+package controller;
 
 import java.util.List;
 
-import main.java.common.pojo.EasyUITreeNode;
 
+import common.pojo.EasyUITreeNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import service.ItemCatService;
 
-import com.taotao.service.ItemCatService;
 
 @Controller
 @RequestMapping("/item/cat")

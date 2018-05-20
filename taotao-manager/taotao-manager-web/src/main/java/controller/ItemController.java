@@ -1,10 +1,9 @@
-package com.taotao.controller;
+package controller;
 
 import java.util.List;
 
-import main.java.common.pojo.EasyUIDataGrideResult;
-import main.java.common.pojo.EasyUITreeNode;
 
+import common.pojo.EasyUIDataGrideResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sun.tools.internal.ws.processor.model.ModelVisitor;
-import com.taotao.pojo.TbItem;
-import com.taotao.service.ItemCatService;
-import com.taotao.service.ItemService;
+import pojo.TbItem;
+import service.ItemService;
+
 
 /**
  * 商品查询

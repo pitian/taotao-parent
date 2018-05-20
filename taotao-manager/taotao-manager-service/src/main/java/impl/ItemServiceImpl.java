@@ -3,6 +3,8 @@ package impl;
 import java.util.List;
 
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import common.pojo.EasyUIDataGrideResult;
 import mapper.TbItemMapper;
 import org.springframework.beans.factory.annotation.Autowired;
